@@ -38,27 +38,27 @@ Con la gallery guarda il prodotto d'arredo da te selezionato nei minimi dettagli
 		<false/>
 	</gap:config-file>
 	
-    <icon src="icon.png" />
-    <icon gap:density="ldpi" gap:platform="android" src="res/icon/android/icon-36-ldpi.png" />
-    <icon gap:density="mdpi" gap:platform="android" src="res/icon/android/icon-48-mdpi.png" />
-    <icon gap:density="hdpi" gap:platform="android" src="res/icon/android/icon-72-hdpi.png" />
-    <icon gap:density="xhdpi" gap:platform="android" src="res/icon/android/icon-96-xhdpi.png" />
-    <icon gap:platform="blackberry" src="res/icon/blackberry/icon-80.png" />
-    <icon gap:platform="blackberry" gap:state="hover" src="res/icon/blackberry/icon-80.png" />
-	<icon gap:platform="ios" height="48" src="res/icon/ios/icon-48.png" width="48" />
-    <icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
-	<icon gap:platform="ios" height="60" src="res/icon/ios/icon-60.png" width="60" />
-    <icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
-	<icon gap:platform="ios" height="76" src="res/icon/ios/icon-76.png" width="76" />
-    <icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
-	<icon gap:platform="ios" height="120" src="res/icon/ios/icon-60-2x.png" width="120" />
-    <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
-	<icon gap:platform="ios" height="152" src="res/icon/ios/icon-76-2x.png" width="152" />
-	<icon gap:platform="ios" height="512" src="res/icon/ios/icon-512.png" width="512" />
-	<icon gap:platform="ios" height="1024" src="res/icon/ios/icon-1024.png" width="1024" />
-    <icon gap:platform="webos" src="res/icon/webos/icon-64.png" />
-    <icon gap:platform="winphone" src="res/icon/windows-phone/icon-62.png" />
-    <icon gap:platform="winphone" gap:role="background" src="res/icon/windows-phone/icon-173.png" />
+    <icon src="icons.png" />
+    <icon gap:density="ldpi" gap:platform="android" src="res/icons/android/icon-36-ldpi.png" />
+    <icon gap:density="mdpi" gap:platform="android" src="res/icons/android/icon-48-mdpi.png" />
+    <icon gap:density="hdpi" gap:platform="android" src="res/icons/android/icon-72-hdpi.png" />
+    <icon gap:density="xhdpi" gap:platform="android" src="res/icons/android/icon-96-xhdpi.png" />
+    <icon gap:platform="blackberry" src="res/icons/blackberry/icon-80.png" />
+    <icon gap:platform="blackberry" gap:state="hover" src="res/icons/blackberry/icon-80.png" />
+	<icon gap:platform="ios" height="48" src="res/icons/ios/icon-48.png" width="48" />
+    <icon gap:platform="ios" height="57" src="res/icons/ios/icon-57.png" width="57" />
+	<icon gap:platform="ios" height="60" src="res/icons/ios/icon-60.png" width="60" />
+    <icon gap:platform="ios" height="72" src="res/icons/ios/icon-72.png" width="72" />
+	<icon gap:platform="ios" height="76" src="res/icons/ios/icon-76.png" width="76" />
+    <icon gap:platform="ios" height="114" src="res/icons/ios/icon-57-2x.png" width="114" />
+	<icon gap:platform="ios" height="120" src="res/icons/ios/icon-60-2x.png" width="120" />
+    <icon gap:platform="ios" height="144" src="res/icons/ios/icon-72-2x.png" width="144" />
+	<icon gap:platform="ios" height="152" src="res/icons/ios/icon-76-2x.png" width="152" />
+	<icon gap:platform="ios" height="512" src="res/icons/ios/icon-512.png" width="512" />
+	<icon gap:platform="ios" height="1024" src="res/icons/ios/icon-1024.png" width="1024" />
+    <icon gap:platform="webos" src="res/icons/webos/icon-64.png" />
+    <icon gap:platform="winphone" src="res/icons/windows-phone/icon-62.png" />
+    <icon gap:platform="winphone" gap:role="background" src="res/icons/windows-phone/icon-173.png" />
     <gap:splash gap:density="ldpi" gap:platform="android" src="res/screen/android/screen-ldpi-portrait.png" />
     <gap:splash gap:density="mdpi" gap:platform="android" src="res/screen/android/screen-mdpi-portrait.png" />
     <gap:splash gap:density="hdpi" gap:platform="android" src="res/screen/android/screen-hdpi-portrait.png" />
@@ -74,5 +74,6 @@ Con la gallery guarda il prodotto d'arredo da te selezionato nei minimi dettagli
 	<gap:splash gap:platform="ios" width="1536" height="2008" src="res/screen/ios/screen-ipad-portrait-2x.png"  />
 	<gap:splash gap:platform="ios" width="2008" height="1536" src="res/screen/ios/screen-ipad-landscape-2x.png"  />	
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
+	
     <access origin="*" />
 </widget>
