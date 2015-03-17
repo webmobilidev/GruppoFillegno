@@ -2,64 +2,35 @@
 <html>
 <head>
     <title>Gruppo Fillegno</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="stylesheet" type="text/css" href="http://mobile.wm4pr.com//Content/jquery.mobile.structure-1.3.2.min.css" />
-    <link rel="stylesheet" type="text/css" href="http://mobile.wm4pr.com/Content/Scuro.min.css"/>
-    <link rel="stylesheet" type="text/css" href="http://mobile.wm4pr.com/Content/jquery.mobile.structure-1.3.0.min.css" />
-    <link rel="stylesheet" type="text/css" href="http://mobile.wm4pr.com/Content/Mobile.css" />
-
-  <!-- Scommentare per l'embed su device-->
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript">
-	// Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        checkConnection();
-    }
-
-        function checkConnection() {
-            var networkState = navigator.connection.type;
-
-            var states = {};
-            states[Connection.UNKNOWN]  = 'Unknown connection';
-            states[Connection.ETHERNET] = 'Ethernet connection';
-            states[Connection.WIFI]     = 'WiFi connection';
-            states[Connection.CELL_2G]  = 'Cell 2G connection';
-            states[Connection.CELL_3G]  = 'Cell 3G connection';
-            states[Connection.CELL_4G]  = 'Cell 4G connection';
-            states[Connection.CELL]     = 'Cell generic connection';
-            states[Connection.NONE]     = 'No network connection';
-			
-			if (navigator.connection.type == Connection.NONE)
-					location.href = "no_connection.html";
-        }
-    </script>
-	<script type="text/javascript" src="http://mobile.wm4pr.com//Scripts/jquery.mobile-1.3.2.min.js"></script>
-    <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/jquery-1.10.0.min.js"></script>
-    <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/MobileGlobals.js"></script>
-    <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/jquery.mobile-1.3.0.min.js"></script>
-    <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/PreSettings.js"></script>
-    <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/MobileEngine.js"></script>
-    <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/klass.min.js" defer="defer"></script>
-    <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/code.photoswipe.jquery-3.0.5.min.js" defer="defer"></script>
-    <script>
-	    
-    </script>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="robots" content="noindex,nofollow" />
+    
+  <link rel="stylesheet" type="text/css" href="http://mobile.wm4pr.com/Content/Scuro.min.css"/>
+  <link rel="stylesheet" type="text/css" href="http://mobile.wm4pr.com/Content/jquery.mobile.structure-1.3.2.min.css" />
+  <link rel="stylesheet" type="text/css" href="http://mobile.wm4pr.com/Content/Mobile.css" />
+  <script type="text/javascript">
+     var onDevice = true;
+  </script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/TP_PushNotification.js"></script>
+  <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/MobileEngine-2.0.0.js"></script>
+  <script type="text/javascript" src="DeviceInit.js"></script>
+  <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/jquery.mobile-1.3.2.min.js"></script>
+  <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/EngineInit.js"></script>
+  <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/klass.min.js" defer="defer"></script>
+  <script type="text/javascript" src="http://mobile.wm4pr.com/Scripts/code.photoswipe.jquery-3.0.5.min.js" defer="defer"></script>
 </head>
 <body data-tp="109413" data-db="prod">
     <div id="fb-root"></div>
     <div data-role="page" id="foo">
         <header data-role="header" id="header" data-position="fixed" >
-            <a href="#panelleft" id="buttonleft" data-iconpos="notext" data-icon="search"
+            <a href="#panelleft" id="buttonleft" data-iconpos="notext" data-icon="home"
                 data-corners="false" data-shadow="false" data-iconshadow="false" style="position:absolute" ></a>
             <h1 class="ui-title"></h1>
             <a href="#panelright" target="_blank" class="getAmbientByShop" id="buttonright" data-iconpos="notext"
@@ -76,28 +47,7 @@
         </aside>
 
         <footer data-role="footer" id="footer" class="fullTextBar">
-            <!--<table>
-                <tr>
-                    <td>
-                        <input type="search" name="fulltext" id="search" value="" data-mini="true"
-                        placeholder="Cerca..." onkeydown="tp.FullTextSearchEnterPressed(this)">
-                    </td>
-                    <td>
-                        <a href="javascript:tp.FullTextSearchButtonPressed('search')" data-role="button"
-                        data-icon="search" data-iconpos="notext">Search</a>
-                    </td>
-                </tr>
-            </table>
-            <!--div class="ui-grid-a">
-                <div class="ui-block-a">
-                    <input type="search" name="fulltext" id="search" value="" data-mini="true"
-                    placeholder="Cerca..." onkeydown="tp.FullTextSearch(this)">
-                </div>
-                <div class="ui-block-b">
-                    <a href="tp.FullTextSearch(this)" data-role="button"
-                    data-icon="search" data-iconpos="notext">Search</a>
-                </div>
-            </div-->
+            
         </footer>
     </div>
 
@@ -130,19 +80,7 @@
                     </td>
                 </tr>
             </table>
-            <!--div class="ui-grid-b">
-                <div class="ui-block-a">
-                    <input type="search" name="fulltext" id="search2" data-mini="true"
-                    value="" placeholder="Cerca..." onkeydown="tp.FullTextSearch(this)">
-                </div>
-                <div class="ui-block-b">
-                    <a href="tp.FullTextSearch(this)" data-role="button"
-                    data-icon="search" data-iconpos="notext">Search</a>
-                </div>
-                <div  class="ui-block-c">
-                    <a data-iconpos="notext" data-role="button" data-icon="delete" data-rel="back"></a>
-                </div>
-            </div-->
+            
         </header>
 
 	    <section data-role="content" id="fullTextContent">
